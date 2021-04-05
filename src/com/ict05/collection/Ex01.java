@@ -9,5 +9,8 @@ public class Ex01 {
 	//			key와 value가 1:1대응, key를 호출하면 value가 나온다.
 	// 형식	  : 컬렉션<제네닉>
 	// 최상위 컬렉션은 collection<E>, Map<k,v>
+	// Collection<E>를 상속받은 인터페이스 : Set<E>, List<E>, Queue<E>
+	
+	//Collection의 주요 메소드 
 	
 }
