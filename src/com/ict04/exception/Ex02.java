@@ -1,4 +1,4 @@
-package com.ict04.exeption;
+package com.ict04.exception;
 
 public class Ex02 {
 	public static void main(String[] args) {

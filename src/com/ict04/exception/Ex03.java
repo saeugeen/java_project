@@ -1,4 +1,4 @@
-package com.ict04.exeption;
+package com.ict04.exception;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
