@@ -60,6 +60,35 @@ public class Ex03_main {
 		}else {
 			System.out.println("없다");
 		}
+		// 갯수 : size
+		System.out.println(h1.size());
+		System.out.println("==============");
+		//삭제 : remove(Object o), clear()
+		//컬렉션 안에 해당 객체가 있으면 삭제,
+		//없으면 삭제 안함
+		//cola가 있으면 삭제 하시오
+		if(h1.contains(cola)) {
+			h1.remove(cola);
+			System.out.println(cola.getName()+"삭제");
+		}else {
+			System.out.println("존재하지 않아서 삭제 못함");
+		}
+		System.out.println("==============");
 		
+		//비었는지 확인 : isEmpty()
+		//전체 삭제 전
+		if(h1.isEmpty()) {
+			System.out.println("비어 있다.");
+		}else {
+			System.out.println("비어 있지 않다.");
+		}
+		System.out.println("==============");
+		//전체 삭제
+		h1.clear();
+		if(h1.isEmpty()) {
+			System.out.println("비어 있다.");
+		}else {
+			System.out.println("비어 있지 않다.");
+		}
 	}
 }
