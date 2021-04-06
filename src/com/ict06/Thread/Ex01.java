@@ -29,5 +29,16 @@ public class Ex01 {
 		// JVM이 main메소드를 호출하면 무조건 main스레드가 일처리를 한다.
 		System.out.println(Thread.currentThread().getName());
 		
+		Ex02 test = new Ex02();
+		System.out.println("1"+Thread.currentThread().getName());
+		test.add(5, 8);
+		System.out.println("4"+Thread.currentThread().getName());
+
+		
+		int result = test.sub(8, 5);
+		System.out.println("7"+Thread.currentThread().getName());
+
+		System.out.println(result);
+		
 	}
 }
