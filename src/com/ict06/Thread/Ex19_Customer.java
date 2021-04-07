@@ -1,8 +1,8 @@
 package com.ict06.Thread;
 
-public class Customer implements Runnable {
-	private Car car;
-	public Customer(Car car) {
+public class Ex19_Customer implements Runnable {
+	private Ex17_Car car;
+	public Ex19_Customer(Ex17_Car car) {
 		this.car =car;
 	}
 	public void run(){
