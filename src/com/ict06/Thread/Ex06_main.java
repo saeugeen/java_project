@@ -9,8 +9,8 @@ public class Ex06_main {
 		Ex06 t3 = new Ex06();
 		
 		// 스레드 처리가 아님
-		t1.run();
-		t2.run();
+		t1.run();	//못 빠져나온다
+		t2.run();	//
 		t3.run();
 		
 		//스레드처리는 병렬처리의 증거
