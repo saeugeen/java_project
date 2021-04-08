@@ -39,6 +39,7 @@ public class Ex05 {
 			fos.write('a');
 			fos.write('v');
 			fos.write('a');
+			fos.write('가'); 	//한글은 불가능
 			
 			//자바에서 줄변경은 13(Carriage return =CR =\r)이다.
 			//다른 언어중에는  (\r\n(Line feed = 10)을 같이 사용하는 경우도 있다.)
