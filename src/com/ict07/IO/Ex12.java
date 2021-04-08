@@ -45,9 +45,7 @@ public class Ex12 {
 			}
 			bos.flush();
 			
-			// 읽는 파일을 삭제
-			read_file.delete();
-			
+
 		} catch (Exception e) {
 			System.out.println(e);
 		} finally {
@@ -56,6 +54,9 @@ public class Ex12 {
 				fos.close();
 				bis.close();
 				fis.close();
+				// 파일이 열려있으면 삭제 할 수 없다.
+				// 읽는 파일을 삭제
+				read_file.delete();
 			} catch (Exception e2) {
 				System.out.println(e2);
 			}
