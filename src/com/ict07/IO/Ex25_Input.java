@@ -1,9 +1,6 @@
 package com.ict07.IO;
 
-import java.io.BufferedInputStream;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.ObjectInputStream;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -22,10 +19,11 @@ public class Ex25_Input {
 			bis = new BufferedInputStream(fis);
 			ois = new ObjectInputStream(bis);
 			
+			
 			ArrayList<Ex25_VO> list = (ArrayList<Ex25_VO>)ois.readObject();
 			//순위 --> 정렬(숙제)
 			//컬렉션을 배열로 변경해서 정렬 순위 
-			Ex25_VO[] arr = (Ex25_VO[])list.toArray();
+			Ex25_VO[] arr = (Ex25_VO[])list.toArray(new Ex25_VO[0]);
 			Ex25_VO tmp =new Ex25_VO();	//임시저장
 			
 			for (int i = 0; i < arr.length-1; i++) {
